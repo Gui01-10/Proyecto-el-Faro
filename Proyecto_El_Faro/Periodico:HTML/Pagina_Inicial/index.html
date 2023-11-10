@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <link rel="shortcut icon" href="imagenes/Wefunction-Woofunction-Newspaper-search.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+<body onload="cargar()">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mibarra" style="padding: 0%;">
+            <div class="container-fluid" style="background-color: #c9d2d0;padding: 10px;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+                <a class="nav-link active" aria-current="page" href="index.html" target="_self" rel="next"><img src="imagenes/Wefunction-Woofunction-Newspaper-search.ico" alt="logo" style="padding-right: 10px;">Home</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                        <a class="nav-link" href="#" target="_self" rel="next" style="padding-left: 435px;" ></a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag002.html" target="_self" rel="next" >Deportes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag.003.html" target="_self" rel="next">Negocios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag004.html" target="_self" rel="next">Noticias Generales</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <h1>Periódico El Faro</h1>
+        <p>Bienvenido a a nuestro Periodico! Estamos siempre actualizados y dispuestos a informarle! 🫶🏾</br>
+        <strong>
+            <div id="msg" style="text-align: center; font-style: oblique;"></div>
+        </strong></p>
+        <img src="imagenes/logoredondoelfaro.png" alt="logoredondoelfaro">
+        <h2 style="font-style: oblique;">Destacados de la semana</h2> <br>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imagenes/manchestercity.jpeg" class="d-block w-40" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Manchester City se consagra campeón!</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="imagenes/nievesant.jpeg" class="d-block w-40" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Se viene nieve en la Capital!</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/granherm.jpeg" class="d-block w-40" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Éxito en el estreno de Gran Hermano Chile!</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+
+    <section style="margin-top: 50px;">
+        <div id="noticias">
+            <div> Noticias Publicadas: <span id="total"></span></div>
+        </div>
+        
+        
+    </section>
+    
+    <footer>
+        <p style="font-style: oblique;"> <strong>Acá encontrarás Noticias destacadas y las secciones de Noticias generales, Deportes y Negocios. Es un placer mantenerlos al dia.</strong></P>
+        <form onsubmit="return false" style="margin: 10px; border-top: 4px solid rgb(1, 5, 13);"></form>
+        
+            <p>Creado por :</p>
+            <ul>
+                <li>joao.dias@correoaiep.cl</li>
+                <li>matias.cheuquian@correoaiep.cl</li>
+                <li>christopher.pedreros@correoaiep.cl</li>
+            </ul>
+        <form onsubmit="return false" style="margin-top: 50px; border-top: 4px solid rgb(1, 5, 13);">
+            <p style="font-style: oblique; margin-top: 20px;"> <strong> Si le encanta el mundo de las noticias y programación, deje su sugestión de Información para ser analisada por nuestros administradores!</strong></P>
+            
+            <input type="text" id="titulo_noticia" maxlength="50" placeholder="   Titulo de la Noticia" required style="margin-top: 10px;"> <br>
+            <textarea id="contenido_noticia" cols="30" rows="10" placeholder="Contenido de la Noticia" style="margin-top: 20px; text-align: center;"></textarea> <br>
+            <input type="image" src="" alt="Imagen autorizada por El Faro"> <br>
+            <button type="submit" onclick="agregarNoticia()">Agregar Noticia</button>
+        </form>
+        
+    </footer>         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="interacion.js"></script>
+</body>
+</html>
